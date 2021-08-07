@@ -1,0 +1,114 @@
+
+
+body{
+  background-image: linear-gradient(50deg, #212121, #424242);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+*{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.container{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  margin:30px auto 0;
+  padding: 0 3px;
+  width: 298px;
+  text-align: center;
+  border: 10px solid #101116;
+  background: #101116;
+  border-radius: 30px;
+  overflow: hidden;
+
+  -moz-box-shadow: 0 0 1em #888;
+  -webkit-box-shadow: 0 0 1em #888;
+}
+ h1 {
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.result{
+  margin-top: 20px;
+  height: 150px;
+  width: 272px;
+  color: white;
+  background-color: #323232;
+  border: 3px solid #595552;
+  margin: 10px auto;
+  border-radius:20px;
+  color: white;
+  text-align: right;
+  font-size: 50px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  overflow: auto;
+}
+
+.keypad{
+  display: grid;
+  grid-template-columns:repeat(4, 1fr) ;
+  grid-auto-rows: minmax(60px, auto);
+  
+}
+/*move the clear button to the top */
+#clear{ 
+  grid-column: 1/3;
+  grid-row: 1;
+  color: #262834;
+}
+#display{
+  grid-column: 3/5;
+  grid-row: 5;
+  color: #262834;
+
+}
+#backspace{
+  color: #262834;
+  font-weight: 500;
+
+}
+button{
+  margin: 5px;
+  border: none;
+  height:  56px;
+  cursor: pointer;
+  border-radius: 10px;
+  border:3px solid #595552;
+  font-weight: 500;
+}
+button:hover {
+  background-color: #ffa089;
+}
+
+
+input:focus,
+input:active,
+button:focus,
+button:active{
+  outline: none;
+}
+.highlight{
+  background: linear-gradient(0.35turn, #FBAB7E, #F7CE68);
+}
+
+
+
+
+
+
+
+
+
+
